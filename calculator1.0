@@ -1,0 +1,38 @@
+-- addition
+function add(a, b)
+  return a + b
+end
+
+-- subtraction
+function subtract(a, b)
+  return a - b
+end
+
+-- multiplication
+function multiply(a, b)
+  return a * b
+end
+
+-- division
+function divide(a, b)
+  if b ~= 0 then
+    return a / b
+  else
+    error("Cannot divide by zero")
+  end
+end
+
+--  example
+local result = add(5, 3)
+print(result)  -- Output: 8
+
+result = subtract(10, 4)
+print(result)  -- Output: 6
+
+result = multiply(2, 5)
+print(result)  -- Output: 10
+
+result = divide(15, 3)
+print(result)  -- Output: 5
+
+result = divide(10, 0)  -- This will throw an error
